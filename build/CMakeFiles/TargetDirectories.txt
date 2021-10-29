@@ -1,3 +1,3 @@
-/opt/soft/HwVideoDec/build/CMakeFiles/rebuild_cache.dir
-/opt/soft/HwVideoDec/build/CMakeFiles/edit_cache.dir
-/opt/soft/HwVideoDec/build/CMakeFiles/videodecoderDemo.dir
+/opt/soft/HwVideoDec_nvidia/build/CMakeFiles/rebuild_cache.dir
+/opt/soft/HwVideoDec_nvidia/build/CMakeFiles/edit_cache.dir
+/opt/soft/HwVideoDec_nvidia/build/CMakeFiles/videodecoderDemo.dir

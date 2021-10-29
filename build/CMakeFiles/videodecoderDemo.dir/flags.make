@@ -6,5 +6,5 @@ CXX_FLAGS =  -O3 -std=c++11 -Wall -Ofast -Wfatal-errors -D_MWAITXINTRIN_H_INCLUD
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/opt/soft/HwVideoDec/include -I/usr/local/cuda/include -isystem /usr/local/include/opencv4 
+CXX_INCLUDES = -I/opt/soft/HwVideoDec_nvidia/include -I/usr/local/cuda/include -isystem /usr/local/include/opencv4 
 

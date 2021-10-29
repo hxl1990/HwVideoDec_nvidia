@@ -4,7 +4,7 @@
 CMakeFiles/videodecoderDemo.dir/src/main.cpp.o
  ../include/utils.hpp
  ../include/videoDec.hpp
- /opt/soft/HwVideoDec/src/main.cpp
+ /opt/soft/HwVideoDec_nvidia/src/main.cpp
  /usr/local/cuda/include/builtin_types.h
  /usr/local/cuda/include/channel_descriptor.h
  /usr/local/cuda/include/crt/common_functions.h

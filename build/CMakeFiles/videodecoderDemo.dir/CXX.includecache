@@ -20,14 +20,16 @@ vector
 
 ../include/videoDec.hpp
 
-/opt/soft/HwVideoDec/src/main.cpp
+/opt/soft/HwVideoDec_nvidia/src/main.cpp
 iostream
 -
 utils.hpp
-/opt/soft/HwVideoDec/src/utils.hpp
+/opt/soft/HwVideoDec_nvidia/src/utils.hpp
 videoDec.hpp
-/opt/soft/HwVideoDec/src/videoDec.hpp
+/opt/soft/HwVideoDec_nvidia/src/videoDec.hpp
 opencv2/opencv.hpp
+-
+glog/logging.h
 -
 
 /usr/local/cuda/include/builtin_types.h

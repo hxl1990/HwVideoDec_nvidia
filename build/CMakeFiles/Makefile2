@@ -44,10 +44,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /opt/soft/HwVideoDec
+CMAKE_SOURCE_DIR = /opt/soft/HwVideoDec_nvidia
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /opt/soft/HwVideoDec/build
+CMAKE_BINARY_DIR = /opt/soft/HwVideoDec_nvidia/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -74,14 +74,14 @@ clean: CMakeFiles/videodecoderDemo.dir/clean
 CMakeFiles/videodecoderDemo.dir/all:
 	$(MAKE) -f CMakeFiles/videodecoderDemo.dir/build.make CMakeFiles/videodecoderDemo.dir/depend
 	$(MAKE) -f CMakeFiles/videodecoderDemo.dir/build.make CMakeFiles/videodecoderDemo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/opt/soft/HwVideoDec/build/CMakeFiles --progress-num=1,2 "Built target videodecoderDemo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/opt/soft/HwVideoDec_nvidia/build/CMakeFiles --progress-num=1,2 "Built target videodecoderDemo"
 .PHONY : CMakeFiles/videodecoderDemo.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/videodecoderDemo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /opt/soft/HwVideoDec/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /opt/soft/HwVideoDec_nvidia/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/videodecoderDemo.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /opt/soft/HwVideoDec/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /opt/soft/HwVideoDec_nvidia/build/CMakeFiles 0
 .PHONY : CMakeFiles/videodecoderDemo.dir/rule
 
 # Convenience name for target.
