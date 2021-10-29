@@ -16,6 +16,17 @@ set(APP_SOURCES
  ${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp
 )
 
+
+INCLUDE(FindPkgConfig) 
+PKG_SEARCH_MODULE(PKG_GLOG REQUIRED libglog)	
+# message(${PKG_GLOG_INCLUDE_DIRS})
+if (PKG_GLOG_FOUND)
+    MESSAGE(STATUS "GLOG_LIBRARIES:          ${PKG_GLOG_LIBRARIES}")		
+    MESSAGE(STATUS "GLOG_INCLUDE_DIRS:          ${PKG_GLOG_INCLUDE_DIRS}")		
+    include_directories(${PKG_GLOG_INCLUDE_DIRS})
+
+endif()
+
 find_package(OpenCV
         PATHS /usr/local
         NO_DEFAULT_PATH
@@ -29,5 +40,5 @@ endif()
 
 
 add_executable(${PROJECT_NAME}   ${APP_SOURCES})
-target_link_libraries(${PROJECT_NAME}   videodecoder ${OpenCV_LIBS}) 
+target_link_libraries(${PROJECT_NAME}   videodecoder ${PKG_GLOG_LIBRARIES}  ${OpenCV_LIBS}) 
 

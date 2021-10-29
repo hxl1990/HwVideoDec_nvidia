@@ -4,10 +4,15 @@
 
 #include <opencv2/opencv.hpp>
 
+#include <glog/logging.h>
+
 int main(int argc, char **argv)
 {
-    char *videoFileName = argv[1];
 
+    char *videoFileName = argv[1];
+    FLAGS_logbufsecs = 0;
+    google::InitGoogleLogging(argv[0]);
+    FLAGS_log_dir = "./";
     videoDec *videodec = new videoDec(0, videoFileName, 0);
     bool finished = false;
     void *bgraPtr = videodec->getFrameAddr();
