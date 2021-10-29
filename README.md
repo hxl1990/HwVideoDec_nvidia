@@ -1,5 +1,6 @@
 # dependencies
 
+- google glog 0.5.0
 - CUDA11.1
 - FFmpeg 4.3.1
 - Nvidia driver >= 456.71
