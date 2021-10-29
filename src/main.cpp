@@ -52,12 +52,11 @@ int main(int argc, char **argv)
     while (!finished)
     {
         finished = videodec->getSrcFrame();
-        // cv::Mat dst;
-        // cv::cvtColor(img, dst, cv::COLOR_BGRA2RGB);
+
         resizePlanarCropBGRA2NvTensor((unsigned char *)bgraPtr, width * 4, width, height,
                                       (float *)inTensor, dstWidth, dstWidth, dstHeight, Rois);
         cv::Mat out0(dstHeight, dstWidth, CV_32FC1, inTensor);
-// #define SHOW_IMG
+#define SHOW_IMG
 #ifdef SHOW_IMG
         cv::imshow("src", img);
 
